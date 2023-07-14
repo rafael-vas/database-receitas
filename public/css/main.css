@@ -1,0 +1,70 @@
+main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .title {
+    margin-bottom: 30px;
+}
+
+main form label {
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+main form input, main form textarea {
+    border: 1px solid #b8b8b8;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+main form button {
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #580f5f;
+    color: white;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+}
+
+main form button:hover {
+    background-color: #9b48a1;
+}
+
+main .form-busca {
+    display: flex;
+    flex-direction: column;
+}
+
+main .form-cadastro div {
+    display: flex;
+    flex-direction: column;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main ul li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Receitas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <%- include("header.ejs") %>
+    <main>
+        <h1 class="title">Pesquisa de Receitas</h1>
+        <form class="form-busca" action="/buscaReceitas_resultado" method="GET">
+            <label for="nomeReceita">Nome da Receita:</label>
+            <input type="text" id="nomeReceita" name="nomeReceita">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </main>
+    <%- include("footer.ejs") %>
+</body>
+
+</html>

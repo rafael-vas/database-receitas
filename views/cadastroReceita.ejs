@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include("header.ejs") %>
+        <main>
+            <h1 class="title">Cadastro de Receitas</h1>
+            <form class="form-cadastro" action="/cadastroReceita_resultado" method="POST">
+                <div>
+                    <label for="nome">Nome da Receita:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="descricao">Descrição da Receita:</label>
+                    <textarea id="descricao" name="descricao" required></textarea>
+                </div>
+                <!-- outros campos do formulário, se necessário -->
+                <div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </main>
+        <%- include("footer.ejs") %>
+</body>
+
+</html>
